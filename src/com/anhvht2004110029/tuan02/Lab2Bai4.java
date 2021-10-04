@@ -1,7 +1,9 @@
+package com.anhvht2004110029.tuan02;
+
 import java.util.Scanner;
 
 public class Lab2Bai4 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("|-------------Menu------------|");
         System.out.println("| 1. Giải phương trình bậc I  |");
         System.out.println("| 2. Giải phương trình bậc II |");
@@ -84,6 +86,5 @@ public class Lab2Bai4 {
             System.out.printf("Tiền điện của tháng: tiendien = %.1f", tiendien);
         }
     }
-
     
 }
