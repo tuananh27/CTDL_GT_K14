@@ -29,23 +29,6 @@ public class BooktestDrive {
             book.intThongtinsach();
         }
 
-        int []arr = {1, 2};
-        int newElement = 3;
-        int n = arr.length;
-        int [] newArr = new int[n + 1];
-        for(int i = 0; i < n; i++){
-            newArr[i] = arr[i];
-        }
-        System.out.println("In mảng cũ");
-        for (int x : arr) {
-            System.out.println(x);
-        }
-        newArr[n] = newElement;
-        System.out.println("In mảng mới");
-        for (int x : newArr) {
-            System.out.println(x);
-        }
-
     }
 
 }
