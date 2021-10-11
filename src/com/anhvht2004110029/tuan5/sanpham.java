@@ -18,7 +18,7 @@ public class sanpham {
         giaSP = g;
     }
 
-    void nhapThongTin() {
+    public void nhapThongTin() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập danh sách sản phẩm: ");
         int i = 1;
@@ -37,14 +37,14 @@ public class sanpham {
         } while (true);
     }
     
-    void hienThi(){
+    public void hienThi(){
         System.out.println("Danh sách sản phẩm: ");
         for (sanpham sanpham : list) 
             System.out.printf(sanpham +"\n", tenSP, giaSP);
             
     }
 
-    void sapXep(){
+    public void sapXep(){
         Comparator<sanpham> comp = new Comparator<>(){
             @Override
             public int compare(sanpham o1, sanpham o2) { 
@@ -54,7 +54,7 @@ public class sanpham {
           Collections.sort(list,comp); 
     }
 
-    void timVaXoa() {
+    public void timVaXoa() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập tên sản phẩm cần tìm và xóa: ");
         String ten = sc.nextLine();
@@ -64,7 +64,7 @@ public class sanpham {
             break;
         }
     }
-    void Menu() {
+    public void Menu() {
         Scanner scanner = new Scanner(System.in);
     
         do {
