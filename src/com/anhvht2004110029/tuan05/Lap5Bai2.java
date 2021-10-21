@@ -1,4 +1,4 @@
-package com.anhvht2004110029.tuan5;
+package com.anhvht2004110029.tuan05;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,6 +25,7 @@ public class Lap5Bai2 {
         String hoTen = scanner.nextLine();
         arrString4 = xoamang(arrString, hoTen);
         Xuatmang(arrString4);
+        int chon;
         do {
             System.out.println("|-----------------------Menu------------------|");
             System.out.println("|1. Nhập danh sách                            |");
@@ -55,7 +56,9 @@ public class Lap5Bai2 {
                 System.exit(0);
                 break;
             }
-        } while (true);
+            System.out.println(" Nhập vào sự lựa chọn");
+            chon = scanner.nextInt();
+        } while (chon == 1);
     
         
     }

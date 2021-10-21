@@ -1,4 +1,4 @@
-package com.anhvht2004110029.tuan5;
+package com.anhvht2004110029.tuan05;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -98,8 +98,4 @@ public class sanpham {
             }
         } while (true);
     }
-    
-
-
-    
 }
