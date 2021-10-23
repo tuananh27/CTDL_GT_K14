@@ -20,7 +20,7 @@ public class MyLinkedList {
         }
 
     }
-    
+
 
     void push(int data){
         Node newNode = new Node(data);
@@ -60,7 +60,21 @@ public class MyLinkedList {
         else
             System.out.println("Phần tử không có trong danh sách");
     }
-        
+    void removeFristNode(int data){
+        if(head == null){
+            System.out.println("Không có gì để xóa");
+        }else{
+            Node temp = head;
+            head = head.next;
+        }
+    }
+
+    void removeLastNode(int data){
+        Node second_last = head;
+        while (second_last.next.next != null)
+            second_last = second_last.next;
+        second_last.next = null;
+    }
 
     void print(){
         Node cur = head;
