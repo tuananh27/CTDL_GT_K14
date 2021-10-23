@@ -20,10 +20,47 @@ public class MyLinkedList {
         }
 
     }
+    
 
-    void remve(){
-
+    void push(int data){
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+        
     }
+
+    void intsertAfter(Node prevNode, int newdata){
+        Node newNode = new Node(newdata);
+        if(prevNode == null){
+            System.out.println("Không có nút ở phỉa trước ");
+        }else{
+            newNode.next = prevNode.next;
+            prevNode.next = newNode;
+        }
+    }
+
+    void searchNode(int data){
+        Node cur = head;
+        int i = 0;
+        boolean bien = false;
+        if(head == null){
+            System.out.println("Không có gì để tìm kiếm");
+        }else{
+            while(cur != null){
+                if(cur.data == data){
+                    bien = true;
+                    break;
+                }
+                i++;
+                cur = cur.next;
+            }
+        }
+        if(bien)
+            System.out.println("Phần tử có trong danh sách: " +i);
+        else
+            System.out.println("Phần tử không có trong danh sách");
+    }
+        
 
     void print(){
         Node cur = head;
@@ -39,10 +76,6 @@ public class MyLinkedList {
             cur = cur.next;
             
         }
-
-    }
-
-    void find(){
 
     }
 
