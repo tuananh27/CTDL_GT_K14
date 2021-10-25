@@ -2,8 +2,8 @@ package com.anhvht2004110029.tuan07;
 
 
 public class MyLinkedList {
-    Node head = null;
-    Node tail = null;
+    public Node head = null;
+    public Node tail = null;
 
     public MyLinkedList(){}
 
