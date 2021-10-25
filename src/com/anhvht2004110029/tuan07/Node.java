@@ -2,8 +2,7 @@ package com.anhvht2004110029.tuan07;
 
 public class Node {
     int data;
-
-    Node next;
+    public Node next;
 
     public Node(){}
 

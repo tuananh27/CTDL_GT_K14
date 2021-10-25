@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.anhvht2004110029.tuan07.Node;
+
 public class Apple {
     String mausac, ma;
     float khoiluong;
     Scanner scanner = new Scanner(System.in);
+    public Node next;
     static List<Apple> apple = new ArrayList<>();
 
     public Apple(){}
@@ -40,10 +43,13 @@ public class Apple {
     public void nhapthongtin(){
         System.out.println("Nhập mã táo: ");
         ma = scanner.nextLine();
+        scanner.nextLine();
         System.out.println("Khối lượng quả táo: ");
         khoiluong = scanner.nextFloat();
+        scanner.nextLine();
         System.out.println("Màu sắc: ");
         mausac = scanner.nextLine();
+        scanner.nextLine();
 
     }
 
