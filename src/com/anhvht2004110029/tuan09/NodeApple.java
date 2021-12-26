@@ -12,4 +12,16 @@ public class NodeApple {
      {
          apple.displayApple();
      }
+     public boolean id(int id)
+    {
+        return this.apple.getId() == id;
+    }
+    public boolean color(String namecl)
+    {
+        return this.apple.getColor().equals(namecl);
+    }
+    public boolean weight(float w)
+    {
+        return this.apple.getWeight() == w;
+    }
 }

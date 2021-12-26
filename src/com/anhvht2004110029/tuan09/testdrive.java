@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class testdrive {
     public static void main(String[] args) {
-        Linkedlist linked = new Linkedlist();
+        LinkedListApple linked = new LinkedListApple();
         Apple apple = new Apple();
         Scanner sc = new Scanner(System.in);
         apple.display();
