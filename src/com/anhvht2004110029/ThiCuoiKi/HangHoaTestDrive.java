@@ -34,41 +34,41 @@ public class HangHoaTestDrive {
                 int soLuong = sc.nextInt();
                 System.out.println("Nhập Giá:");
                 float gia = sc.nextFloat();
-                System.out.println("Nhập Loại Hàng [1: Thực Phẩm; 2: Sành Sứ; 3: Điện Máy]");
+                System.out.println("Nhập Loại Hàng [1: Thưc Pham; 2: Sanh Su; 3: Dien May]");
                 int l = sc.nextInt();
                 switch(l)
                 {
-                    case 1: loaiHh = "Thực Phẩm";
+                    case 1: loaiHh = "Thuc Pham";
                     break;
-                    case 2: loaiHh = "Sành Sứ";
+                    case 2: loaiHh = "Sanh Su";
                     break;
-                    case 3: loaiHh = "Điện Máy";
+                    case 3: loaiHh = "Dien May";
                     break;
-                    default: System.out.println("Loại Không Hợp Lệ!!!");
+                    default: System.out.println("Loai Khong Hop Le!");
                     break;
                 }
                 sc.nextLine();
                 try {
-                    System.out.println("Nhập Ngày Vào Kho [dd/MM/yyyy]");
+                    System.out.println("Nhap Ngay Vao Kho [dd/MM/yyyy]");
                     ngayNhap = df.parse(sc.nextLine());
                 } catch (Exception e) {
-                    System.out.println("Ngày Không Hợp Lệ!!!!");
+                    System.out.println("Ngày Khong Dung!!");
                 }
                 HangHoa hangHoa = new HangHoa(soLuong, ten, loaiHh, gia, ngayNhap);
                 listHangHoa.ThemHangHoa(hangHoa);
                     break;
                 case 2:
-                System.out.println("Nhâp ID Muốn Xoá:");
+                System.out.println("Nhap loai can xoa:");
                 int id1 = sc.nextInt();
                 listHangHoa.XoaHangHoa(id1);
                     break;
                 case 3:
-                System.out.println("Nhập ID Cần Sửa:");
+                System.out.println("Nhap ID can sua:");
                 int id = sc.nextInt();
                 listHangHoa.SuaThongTin(id);
                     break;
                 case 4:
-                System.out.println("Muốn Sắp Xếp [1: Tăng Dần];[2: Giảm Dần]");
+                System.out.println("Muon sap xep [1: Tang Dan ];[2: Giam Dan ]");
                     int llll_ = sc.nextInt();
                     switch(llll_){
                         case 1:
@@ -81,7 +81,7 @@ public class HangHoaTestDrive {
                     }
                     break;
                 case 5:
-                
+                listHangHoa.ThongKe();
                     break;
                 case 6:
                 listHangHoa.HienThiHangHoa();

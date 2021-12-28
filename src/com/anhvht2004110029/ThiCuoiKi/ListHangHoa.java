@@ -135,7 +135,7 @@ public class ListHangHoa {
             }
             node = node.getNext();
         }
-        System.out.println("Vui Lòng Xem Lại Danh Sách Để Thấy Kết Quả Sắp Xếp"); 
+        System.out.println("vui long xem lai"); 
     }
     public void SapXepGiamDan(){
         Node node = this.head, node2 = null;
@@ -152,8 +152,21 @@ public class ListHangHoa {
             }
             node = node.getNext();
         }
-        System.out.println("Vui Lòng Xem Lại Danh Sách Để Thấy Kết Quả Sắp Xếp");
+        System.out.println("Vui long xem lai");
 
+    }
+    public void ThongKe(){
+        Node node = this.head;
+        int sLtemp = 0;
+        float gTtemp = 0;
+        while(node != null){
+            sLtemp += node.getHangHoa().getSoLuong();
+            gTtemp += node.getHangHoa().getGiaHang();
+            node = node.getNext();
+        }
+        System.out.println("Thong tin thong ke");
+        System.out.printf("%-30S %-30S\n", "tổng số lượng", "tổng giá trị");
+        System.out.printf("%-30d %-30.3fVNĐ\n", sLtemp, gTtemp);
     }
     public boolean TimKiemTheoLoai(String l){
         System.out.println("THÔNG TIN");
